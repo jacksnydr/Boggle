@@ -16,7 +16,7 @@ class BoardTest {
     @Test
     void randomList () throws IOException {
         int size = 10;
-        @NotNull WordList words = new WordList(new File("A8/commonwords.txt"));
+        @NotNull WordList words = new WordList(new File("Boggle/commonwords.txt"));
         @NotNull Boggle game = new Boggle(size, words);
         game.show();
 
@@ -30,7 +30,7 @@ class BoardTest {
     void smallComparison () throws IOException {
         Boggle game1, game2;
 
-        @NotNull File file = new File("A8/commonwords.txt");
+        @NotNull File file = new File("Boggle/commonwords.txt");
         @NotNull WordList words = new WordList(file);
         @NotNull Trie trie = new Trie(file);
 
