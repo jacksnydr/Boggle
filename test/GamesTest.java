@@ -24,7 +24,7 @@ public class GamesTest {
 
     @BeforeAll
     static void setup () throws IOException {
-        dict = new Trie(new File("A8/commonwords.txt"));
+        dict = new Trie(new File("Boggle/commonwords.txt"));
     }
 
     @Test
